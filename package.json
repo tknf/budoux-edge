@@ -1,0 +1,42 @@
+{
+  "name": "@tknf/budoux-edge",
+  "version": "0.1.0",
+  "description": "BudouX on Edge environments",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tknf/budoux-edge.git"
+  },
+  "author": "TKNF LLC",
+  "bugs": {
+    "url": "https://github.com/tknf/budoux-edge/issues"
+  },
+  "keywords": [
+    "budoux",
+    "edge",
+    "worker"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/*"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run --config vitest.config.ts"
+  },
+  "peerDependencies": {
+    "budoux": "^0.5.0"
+  },
+  "devDependencies": {
+    "@tknf/prettier-config": "^1.0.8",
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.3",
+    "vitest": "^0.29.8",
+    "vitest-environment-miniflare": "^2.13.0"
+  },
+  "prettier": "@tknf/prettier-config"
+}

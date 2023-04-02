@@ -1,0 +1,21 @@
+name: "Test packages"
+on: [push]
+jobs:
+  node-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8.1.0
+
+      - name: Install Dependencies
+        run: pnpm install
+
+      - name: Build package
+        run: pnpm run build
+
+      - name: Run test
+        run: pnpm run test

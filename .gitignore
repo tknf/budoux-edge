@@ -1,0 +1,9 @@
+.DS_Store
+/data
+/dist
+*.pyc
+*.log
+*.coverage
+node_modules
+
+.vscode/
