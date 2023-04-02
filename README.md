@@ -7,7 +7,7 @@ This package provides `budoux/edge` tuned to work in Edge environments by omitti
 ## Install
 
 ```shellsession
-$ npm install budoux @tknf/budoux
+$ npm install budoux @tknf/budoux-edge
 ```
 
 ## Usage on Edge
